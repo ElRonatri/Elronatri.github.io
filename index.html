@@ -6,12 +6,12 @@
 	<meta name="description" content="Intento de HTML5">
 	<meta name="keywords" content="HTML5, CSS3, Javascript">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!--Escala la resolución para Dispositivos Móviles-->
-	<title>Intento de HTML5 en Sublime</title> <!-- Es el título de la pagina web en la pestaña-->
-	<link rel="stylesheet" type="text/css" href="misestilos.css">
+	<title>HTML5 y CSS3</title> <!-- Es el título de la pagina web en la pestaña-->
+	<link rel="stylesheet" href="Prueba.css">
 </head>
 <body>
 	<header>
-		<h1>Intento de Header</h1>
+		<h1 id="tituloprincipal">Intento de Header</h1>
 	</header>
 	<nav> <!-- Barra de navegación con sus enlaces-->
 		<ul>
@@ -25,42 +25,42 @@
 		<article> 
       		<header>
       			<hgroup> <!-- si se ocupa mas de un tag H, se deberá ocupar hgroup-->
-      			<h1>Titulo del Mensaje 1</h1>
-      			<h2>Subtítulo del mensaje uno</h2>
+      			<h1 class="titulo">Titulo del Mensaje 1</h1>
+      			<h2 class="subtitulo">Subtítulo del mensaje uno</h2>
       			</hgroup>
       			<time datetime="2007-02-15" pubdate>Publicado 15-02-2007</time>
       		</header>
       		<span style="color: violet;text-align: center;">Este es el <mark>texto</mark> de mi <strong>primer</strong> <em>mensaje</em></span>
       		<figure> <!-- figure se ocupa para incrustar ilustraciones, fotos, videos, etc-->
-      			<img src="https://pm1.narvii.com/6721/c680303832bd012e21b1a58df507915e997a6312_128.jpg">
+      			<img src="Eva-01.jpg"> <!--src es al insertar imagen o video y refiere a la fuente-->
       			<figcaption> <!-- figcaption es la descripción del contenido incrustado-->
       				Imagen del <cite>primer</cite> mensaje (<em>Eva-01</em>)
       			</figcaption>
       		</figure>
       		<footer>
-      			<p>comentarios (0)</p>
-            <address>
-              <a href="https://www.evangelion.co.jp">Evangelion JP</a>
+      			<p class="comentarios">comentarios (0)</p>
+            <address> <!-- href se usa para la referencia del link, tambien usado para linkear el css-->
+              <a class="linkeva" href="https://www.evangelion.co.jp">Evangelion JP</a>
             </address>
       		</footer> 
     	</article> 
     	<article>
     		<header>
     			<hgroup>
-    			<h1>Titulo del mensaje 2</h1>
-    			<h2>Subtítulo del mensaje dos</h2>
+    			<h1 class="titulo">Titulo del mensaje 2</h1>
+    			<h2 class="subtitulo">Subtítulo del mensaje dos</h2>
     		</hgroup>
     		<time datetime="2015-04-23" pubdate>Publicado 23-04-2015</time>
     		</header> 
      		 Este es el texto de mi segundo mensaje
      		 <figure>
-     		 	<img src="https://pm1.narvii.com/6729/2839c22e4a50c861fa81a9030cd97ef66b3574cdv2_128.jpg">
+     		 	<img src="Eva-02.jpg">
      		 	<figcaption>
      		 		Imagen del segundo mensaje (<em>Eva-02</em>)
      		 	</figcaption>
      		 </figure> 
      		 <footer>
-     		 	<p>comentarios (0)</p>
+     		 	<p class="comentarios">comentarios (0)</p>
      		 </footer>
     	</article> 
 	</section>
@@ -70,6 +70,7 @@
 	</aside>
 	<footer> <!-- Pie de página-->
 		<small>Derechos Reservados &copy; 1998-2019</small>
-	</footer>
+	<p name="prueba">referemciado</p>
+  </footer>
 </body>
 </html>
